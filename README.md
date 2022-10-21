@@ -5,11 +5,11 @@ echo $env:USERPROFILE\.config\powershell\user_profile.ps1 > $PROFILE
 ```
 **Create specific directory for user profile**  
 ```
-mkdir ~/.config | mkdir ~/.config/powershell
+mkdir ~/.config  
 ```
 **Move to folder**   
 ```
-cd ~/.config/powershell
+cd ~/.config
 ```
 **Pull prepared profile**
 ```
