@@ -27,7 +27,7 @@ Import-Module PSReadLine
 Function IndeedNovVPNOn {rasdial "Indeed-ID.VPN.General"}
 Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue}
 Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.General" /disconnect}
-Function shutdownoff {shutdown /p /t 1}
+Function shutdownoff {shutdown /p}
 Function shutdownreboot {shutdown /r /t 0}
 Function wincheck {sudo get-windowsupdate}
 Function winupdate {sudo Get-WindowsUpdate -AcceptAll -Install}
