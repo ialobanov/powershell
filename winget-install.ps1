@@ -9,3 +9,4 @@ wi install -h --id Zoom.Zoom
 wi install -h --id Skillbrains.Lightshot
 wi install -h --id ProtonTechnologies.ProtonVPN
 wi install -h --id 7zip.7zip
+wi install -h --id Git.Git
