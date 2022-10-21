@@ -1,4 +1,8 @@
-# Powerfull powershell  
+# Powerful powershell  
+**Prerequisites**  
+[Windows Terminal](https://github.com/microsoft/terminal)  
+[PowerShell](https://github.com/PowerShell/PowerShell/releases/tag/v7.2.7)  
+  
 **How to use**  
 ```
 winget install -h --id Git.Git
@@ -8,7 +12,7 @@ git clone https://github.com/lobanov4real/pwsh-user-profile.git
 cd ~/powershell
 ./run-install.ps1 in powershell
 ```
-## Manual deploy caustom powershell user profile  
+## Manual deploy custom powershell user profile  
 **Add path for custom powershell user profile**  
 ```
 echo $env:USERPROFILE\.config\powershell\user_profile.ps1 > $PROFILE    
