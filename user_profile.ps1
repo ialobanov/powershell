@@ -1,6 +1,7 @@
 oh-my-posh init pwsh --config "~\AppData\Local\Programs\oh-my-posh\themes\takuya.omp.json" | Invoke-Expression
 
 Set-PSReadLineOption -EditMode Emacs -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -Colors @{
 	Command            = 'DarkCyan'
 	Number             = 'Gray'
@@ -20,7 +21,7 @@ Import-Module Terminal-Icons
 Import-Module 7Zip4Powershell
 Import-Module PSWindowsUpdate
 Install-Module VPNCredentialsHelper
-
+Import-Module PSReadLine
 
 # Functions
 Function IndeedNovVPNOn {rasdial "Indeed-ID.VPN.General"}
