@@ -7,14 +7,6 @@ cd ~/.config
 git clone https://github.com/lobanov4real/pwsh-user-profile.git
 ./run-install.ps1 in powershell
 ```
-**Order of run-inatall**  
-
-1. module-install.ps1  
-2. scoop-install.ps1
-3. winget-install.ps1
-4. add path for custom powershell user profile
-5. clone repo
-
 ## Manual deploy caustom powershell user profile  
 **Add path for custom powershell user profile**  
 ```
