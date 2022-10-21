@@ -2,6 +2,9 @@
 **How to use**  
 ```
 winget install -h --id Git.Git
+mkdir ~/.config
+cd ~/.config
+git clone https://github.com/lobanov4real/pwsh-user-profile.git
 ./run-install.ps1 in powershell
 ```
 **Order of run-inatall**  
