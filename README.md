@@ -3,7 +3,7 @@
 ```
 just execute run-install.ps1 in powershell
 ```
-**Order**
+**Order of run-inatall**
 ~~~
 1. module-install.ps1  
 2. scoop-install.ps1
