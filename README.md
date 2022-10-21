@@ -1,7 +1,7 @@
 # Powerfull powershell  
 **How to use**  
 ```
-just execute run-install.ps1
+just execute run-install.ps1 in powershell
 ```
 **Order**
 ~~~
