@@ -1,5 +1,5 @@
 # Custom powershell user profile  
-**Add custom powershell user profile file**  
+**Add path for custom powershell user profile**  
 ```
 echo $env:USERPROFILE\.config\powershell\user_profile.ps1 > $PROFILE    
 ```
@@ -7,9 +7,11 @@ echo $env:USERPROFILE\.config\powershell\user_profile.ps1 > $PROFILE
 ```
 mkdir ~/.config | mkdir ~/.config/powershell
 ```
-**Move to folder & add pull prepared profile**  
+**Move to folder**   
 ```
 cd ~/.config/powershell
-git init
-git pull https://github.com/lobanov4real/pwsh-user-profile.git  
+```
+**Pull prepared profile**
+```
+git init | git pull https://github.com/lobanov4real/pwsh-user-profile.git  
 ```
