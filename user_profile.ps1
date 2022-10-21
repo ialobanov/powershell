@@ -28,6 +28,8 @@ Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAct
 Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.General" /disconnect}
 Function shutdownoff {shutdown /p /t 1}
 Function shutdownreboot {shutdown /r /t 0}
+Function wincheck {sudo get-windowsupdate}
+Function winupdate {sudo Get-WindowsUpdate -AcceptAll -Install}
 
 # Alias
 Set-Alias iion IndeedNovVPNOn
@@ -46,3 +48,5 @@ Set-Alias zoom 'C:\Program Files\Zoom\bin\Zoom.exe'
 Set-Alias reboot shutdownreboot
 Set-Alias poweroff shutdownoff
 Set-Alias clean CleanTemp
+Set-Alias winup winupdate
+Set-Alias winchk wincheck
