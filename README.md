@@ -1,4 +1,8 @@
 # Powerfull powershell  
+**How to use**  
+```
+just execute run-install.ps1
+```
 **Order**
 ~~~
 1. module-install.ps1  
