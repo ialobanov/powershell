@@ -20,5 +20,5 @@ cd ~/.config
 ```
 **Pull prepared profile**
 ```
-git init | git pull https://github.com/lobanov4real/pwsh-user-profile.git  
+git pull https://github.com/lobanov4real/pwsh-user-profile.git  
 ```
