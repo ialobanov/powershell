@@ -1,4 +1,4 @@
-JanDeDobbeleer.OhMyPosh JanDeDobbeleer.OhMyPosh
+wi install -h --id JanDeDobbeleer.OhMyPosh
 wi install -h --id Google.Chrome
 wi install -h --id Telegram.TelegramDesktop
 wi install -h --id Bitwarden.Bitwarden
