@@ -4,7 +4,7 @@
 just execute run-install.ps1 in powershell
 ```
 **Order of run-inatall**
-```
+~~~
 1. module-install.ps1  
 2. scoop-install.ps1
 3. winget-install.ps1
