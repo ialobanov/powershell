@@ -1,6 +1,7 @@
 # Powerfull powershell  
 **How to use**  
 ```
+winget install -h --id Git.Git
 ./run-install.ps1 in powershell
 ```
 **Order of run-inatall**  
