@@ -4,11 +4,12 @@
 just execute run-install.ps1 in powershell
 ```
 **Order of run-inatall**
-~~~
+```
 1. module-install.ps1  
 2. scoop-install.ps1
-3. add path for custom powershell user profile
-4. winget-install.ps1
+3. winget-install.ps1
+4. add path for custom powershell user profile
+5. clone repo
 ~~~
 **Add path for custom powershell user profile**  
 ```
