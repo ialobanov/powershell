@@ -1,6 +1,6 @@
 oh-my-posh init pwsh --config "~\AppData\Local\Programs\oh-my-posh\themes\takuya.omp.json" | Invoke-Expression
 
-Set-PSReadLineOption -EditMode Emacs -PredictionSource History
+Set-PSReadLineOption -EditMode Emacs -PredictionSource History -BellStyle None
 Set-PSReadLineOption -PredictionViewStyle ListView -ShowToolTips:$True -HistoryNoDuplicates:$True
 Set-PSReadLineOption -Colors @{
 	Command            = 'DarkCyan'
