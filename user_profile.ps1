@@ -18,6 +18,9 @@ Set-PSReadLineOption -Colors @{
 # Import-Module
 Import-Module Terminal-Icons
 Import-Module 7Zip4Powershell
+Import-Module PSWindowsUpdate
+Install-Module VPNCredentialsHelper
+
 
 # Functions
 Function IndeedNovVPNOn {rasdial "Indeed-ID.VPN.General"}
