@@ -1,4 +1,4 @@
-# Powerful powershell  
+# My powershell setup  
 **Prerequisites**  
 [Windows Terminal](https://github.com/microsoft/terminal)  
 [PowerShell](https://github.com/PowerShell/PowerShell/releases/tag/v7.2.7)  
