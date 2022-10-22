@@ -13,7 +13,7 @@ cd ~/powershell
 ./run-install.ps1 in powershell
 ```
 ## List of powershell modules  
-- Name Terminal-Icons
+- Terminal-Icons
 - 7Zip4Powershell
 - PSWindowsUpdate
 - VPNCredentialsHelper
