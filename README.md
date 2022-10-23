@@ -1,4 +1,7 @@
 # My powershell setup for Windows  
+**Description**  
+It's my personal powershell setup and some software for deployment on new OS (Windows 11). I use Oh My Posh to change standard look of powershell with theme ***Takuya***, you can choose different themes [here](https://ohmyposh.dev/docs/themes). I add some settings for promptline, usefull alias for me and color scheme.
+  
 **Prerequisites**  
 [Windows Terminal](https://github.com/microsoft/terminal)  
 [PowerShell](https://github.com/PowerShell/PowerShell/releases/tag/v7.2.7)  
@@ -34,4 +37,7 @@ cd ~/powershell
 - Zoom
 - Lightshot
 - ProtonVPN
-- 7zip
+- 7zip  
+  
+> **Warning**  
+Some software: ***Speccy***, ***Zoom***, ***Lightshot***, ***ProtonVPN*** and ***7zip*** require a privileged right to install. You can run powershell as Administrator or just confirm operation in installation process.  
