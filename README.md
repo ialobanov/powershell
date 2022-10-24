@@ -16,7 +16,7 @@ exit
 Add-Content $PROFILE '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
 mkdir ~/.config | cd ~/.config
 git clone https://github.com/lobanov4real/powershell.git
-cd ./powershell | ./run-install.ps1 in powershell
+cd ./powershell | ./run-install.ps1  
 ```
 ## List of powershell modules  
 - Terminal-Icons
