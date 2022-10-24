@@ -17,16 +17,16 @@ Set-PSReadLineOption -Colors @{
 	}
 
 # Import-Module
-Import-Module Terminal-Icons
-Import-Module 7Zip4Powershell
-Import-Module PSWindowsUpdate
-Install-Module VPNCredentialsHelper
-Import-Module PSReadLine
+Import-Module -SkipEditionCheck -Force -Name 'Terminal-Icons'
+Import-Module -SkipEditionCheck -Force -Name '7Zip4Powershell'
+Import-Module -SkipEditionCheck -Force -Name 'PSWindowsUpdate'
+Import-Module -SkipEditionCheck -Force -Name 'VPNCredentialsHelper'
+Import-Module -SkipEditionCheck -Force -Name 'PSReadLine'
 
 # Functions
-Function IndeedNovVPNOn {rasdial "Indeed-ID.VPN.General"}
+# Function IndeedNovVPNOn {rasdial "Indeed-ID.VPN.General"}
 Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue}
-Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.General" /disconnect}
+# Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.General" /disconnect}
 Function shutdownoff {shutdown /p}
 Function shutdownreboot {shutdown /r /t 0}
 Function wincheck {sudo get-windowsupdate}
@@ -45,7 +45,7 @@ Set-Alias slack ~\AppData\Local\slack\slack.exe
 Set-Alias indeed '~\OneDrive\Documents\Indeed Identity.rdp'
 Set-Alias tlg '~\AppData\Roaming\Telegram Desktop\Telegram.exe'
 Set-Alias chrome 'C:\Program Files\Google\Chrome\Application\chrome.exe'
-Set-Alias zoom 'C:\Program Files\Zoom\bin\Zoom.exe'
+Set-Alias zoom 'C:\Users\Ivan\AppData\Roaming\Zoom\bin\Zoom.exe'
 Set-Alias reboot shutdownreboot
 Set-Alias poweroff shutdownoff
 Set-Alias clean CleanTemp
