@@ -5,15 +5,17 @@ It's my personal powershell setup and some software for deployment on new OS (Wi
 **Prerequisites**  
 [Windows Terminal](https://github.com/microsoft/terminal)  
 [PowerShell](https://github.com/PowerShell/PowerShell/releases/tag/v7.2.7)  
+[Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/en-us/download/confirmation.aspx?id=53840)
   
 **How to use**  
 ```
 winget install -h --id Git.Git
-mkdir ~/.config
-cd ~/.config
-git clone https://github.com/lobanov4real/pwsh-user-profile.git
-cd ~/powershell
-./run-install.ps1 in powershell
+winget install JanDeDobbeleer.OhMyPosh -s winget
+!Reload powershell
+Add-Content $PROFILE '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
+mkdir ~/.config | cd ~/.config
+git clone https://github.com/lobanov4real/powershell.git
+cd ./powershell | ./run-install.ps1 in powershell
 ```
 ## List of powershell modules  
 - Terminal-Icons
@@ -40,4 +42,4 @@ cd ~/powershell
 - 7zip  
   
 > **Warning**  
-Some software: ***Speccy***, ***Zoom***, ***Lightshot***, ***ProtonVPN*** and ***7zip*** require a privileged right to install. You can run powershell as Administrator or just confirm operation in installation process.  
+Some software: ***Google Chrome***, ***Speccy***, ***Zoom***, ***Lightshot***, ***ProtonVPN*** and ***7zip*** require a privileged right to install. You can run powershell as Administrator or just confirm operation in installation process.  
