@@ -9,8 +9,8 @@ It's my personal powershell setup and some software for deployment on new OS (Wi
   
 **How to use**  
 ```
-winget install -h --id Git.Git
-winget install JanDeDobbeleer.OhMyPosh -s winget
+winget install -SkipPublisherCheck -AcceptLicense -h --id Git.Git
+winget install -SkipPublisherCheck -AcceptLicense -h JanDeDobbeleer.OhMyPosh -s winget
 !Reload powershell
 Add-Content $PROFILE '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
 mkdir ~/.config | cd ~/.config
