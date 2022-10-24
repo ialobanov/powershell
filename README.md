@@ -11,7 +11,8 @@ It's my personal powershell setup and some software for deployment on new OS (Wi
 ```
 winget install -SkipPublisherCheck -AcceptLicense -h --id Git.Git
 winget install -SkipPublisherCheck -AcceptLicense -h JanDeDobbeleer.OhMyPosh -s winget
-!Reload powershell
+exit
+Win + 1 [Windows hotkeys for run powershell]
 Add-Content $PROFILE '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
 mkdir ~/.config | cd ~/.config
 git clone https://github.com/lobanov4real/powershell.git
