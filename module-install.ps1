@@ -1,5 +1,5 @@
-Install-Module -Name Terminal-Icons
-Install-Module -Name PSReadLine -Force
-Install-Module -Name 7Zip4Powershell
-Install-Module -Name PSWindowsUpdate
-Install-Module -Name VPNCredentialsHelper
+Install-Module -SkipPublisherCheck -AcceptLicense -Name Terminal-Icons -Scope CurrentUser
+Install-Module -SkipPublisherCheck -AcceptLicense -Name PSReadLine -Force -Scope CurrentUser
+Install-Module -SkipPublisherCheck -AcceptLicense -Name 7Zip4Powershell -Scope CurrentUser
+Install-Module -SkipPublisherCheck -AcceptLicense -Name PSWindowsUpdate -Scope CurrentUser
+Install-Module -SkipPublisherCheck -AcceptLicense -Name VPNCredentialsHelper -Scope CurrentUser
