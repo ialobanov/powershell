@@ -1,6 +1,13 @@
 oh-my-posh init pwsh --config "~\AppData\Local\Programs\oh-my-posh\themes\takuya.omp.json" | Invoke-Expression
 
-Set-PSReadLineOption -EditMode Vi -PredictionSource History -BellStyle None -ViModeIndicator Cursor # -ViModeChangeHandler $OnViModeChange
+# Import-Module
+Import-Module -SkipEditionCheck -Force -Name 'Terminal-Icons'
+Import-Module -SkipEditionCheck -Force -Name '7Zip4Powershell'
+Import-Module -SkipEditionCheck -Force -Name 'PSWindowsUpdate'
+Import-Module -SkipEditionCheck -Force -Name 'VPNCredentialsHelper'
+Import-Module -SkipEditionCheck -Force -Name 'PSReadLine'
+
+Set-PSReadLineOption -EditMode Emacs -PredictionSource History -BellStyle None -ViModeIndicator Cursor # -ViModeChangeHandler $OnViModeChange
 Set-PSReadLineOption -PredictionViewStyle ListView -ShowToolTips:$True -HistoryNoDuplicates:$True
 Set-PSReadLineOption -Colors @{
 	Command            = 'DarkCyan'
@@ -16,12 +23,6 @@ Set-PSReadLineOption -Colors @{
 	String             = 'DarkYellow'
 	}
 
-# Import-Module
-Import-Module -SkipEditionCheck -Force -Name 'Terminal-Icons'
-Import-Module -SkipEditionCheck -Force -Name '7Zip4Powershell'
-Import-Module -SkipEditionCheck -Force -Name 'PSWindowsUpdate'
-Import-Module -SkipEditionCheck -Force -Name 'VPNCredentialsHelper'
-Import-Module -SkipEditionCheck -Force -Name 'PSReadLine'
 
 # Functions
 # Function IndeedNovVPNOn {rasdial "Indeed-ID.VPN.General"}
