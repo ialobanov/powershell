@@ -10,13 +10,15 @@ It's my personal powershell setup and some software for deployment on new OS (Wi
 ## How to use  
 ```
 winget install -SkipPublisherCheck -AcceptLicense -h --id Git.Git
-winget install -SkipPublisherCheck -AcceptLicense -h JanDeDobbeleer.OhMyPosh -s winget
+winget install -SkipPublisherCheck -AcceptLicense -h --id JanDeDobbeleer.OhMyPosh
 exit
 > Win + 1 [Windows global hotkeys for run powershell]
 Add-Content $PROFILE '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
-mkdir ~/.config | cd ~/.config
+mkdir ~/.config
+cd ~/.config
 git clone https://github.com/lobanov4real/powershell.git
-cd ./powershell | ./run-install.ps1  
+cd ./powershell 
+./run-install.ps1  
 ```
 ## List of powershell modules  
 - Terminal-Icons
