@@ -45,4 +45,4 @@ cd ./powershell
 - 7zip  
   
 > **Warning**  
-Some software: ***Google Chrome***, ***Speccy***, ***Zoom***, ***Lightshot***, ***ProtonVPN*** and ***7zip*** require a privileged right to install. You can run powershell as Administrator or just confirm operation in installation process.  
+Some software: ***Google Chrome***, ***Speccy***, ***Zoom***, ***Lightshot***, ***ProtonVPN*** and ***7zip*** require a privileged right to install. You can run powershell as Administrator or just confirm operation during installation.  
