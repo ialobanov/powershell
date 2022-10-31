@@ -9,8 +9,8 @@ It's my personal powershell setup and some software for deployment on new OS (te
   
 ## How to use  
 ```
-winget install -SkipPublisherCheck -AcceptLicense -h --id Git.Git
-winget install -SkipPublisherCheck -AcceptLicense -h --id JanDeDobbeleer.OhMyPosh
+winget install -SkipPublisherCheck -AcceptLicense -h --id Git.Git -Force
+winget install -SkipPublisherCheck -AcceptLicense -h --id JanDeDobbeleer.OhMyPosh -Force
 exit
 > Win + 1 [Windows global hotkeys for run powershell]
 Add-Content $PROFILE '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
