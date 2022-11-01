@@ -34,6 +34,7 @@ Function shutdownoff {shutdown /p}
 Function shutdownreboot {shutdown /r /t 0}
 Function wincheck {sudo get-windowsupdate}
 Function winupdate {sudo Get-WindowsUpdate -AcceptAll -Install}
+Function reloadpowershell {Invoke-Command { & "pwsh.exe"       } -NoNewScope}
 
 # Alias
 Set-Alias iion IndeedNovVPNOn
@@ -54,3 +55,5 @@ Set-Alias poweroff shutdownoff
 Set-Alias clean CleanTemp
 Set-Alias winup winupdate
 Set-Alias winchk wincheck
+Set-Alias touch New-Item
+Set-Alias reload reloadpowershell
