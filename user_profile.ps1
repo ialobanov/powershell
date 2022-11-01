@@ -29,10 +29,10 @@ Set-PSReadLineOption -Colors @{
 Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue |
 	sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction SilentlyContinue
 	}
-# Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.General" /disconnect}
+Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.General" /disconnect}
 Function shutdownoff {shutdown /p}
 Function shutdownreboot {shutdown /r /t 0}
-Function wincheck {sudo get-windowsupdate}
+Function wincheck {sudo Get-WindowsUpdate}
 Function winupdate {sudo Get-WindowsUpdate -AcceptAll -Install}
 Function reloadpowershell {Invoke-Command { & "pwsh.exe"       } -NoNewScope}
 
