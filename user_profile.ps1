@@ -6,7 +6,6 @@ Import-Module -SkipEditionCheck -Force -Name '7Zip4Powershell'
 Import-Module -SkipEditionCheck -Force -Name 'PSWindowsUpdate'
 Import-Module -SkipEditionCheck -Force -Name 'VPNCredentialsHelper'
 Import-Module -SkipEditionCheck -Force -Name 'PSReadLine'
-Import-Module -SkipEditionCheck -Force -Name 'PoshColor'
 
 # PSReadline options
 Set-PSReadLineOption -EditMode Emacs -PredictionSource History -BellStyle None -ViModeIndicator Cursor # -ViModeChangeHandler $OnViModeChange
