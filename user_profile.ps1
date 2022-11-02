@@ -19,7 +19,7 @@ Set-PSReadLineOption -Colors @{
 	Variable           = 'DarkGreen'
 	Parameter          = 'Green'
 	ContinuationPrompt = 'DarkGray'
-	Default            = '#DA52D8'
+	Default            = '#D84ACD'
 	Error              = 'Red'
 	String             = 'Blue'
 	}
