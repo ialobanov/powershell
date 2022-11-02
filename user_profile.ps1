@@ -12,14 +12,14 @@ Set-PSReadLineOption -EditMode Emacs -PredictionSource History -BellStyle None -
 Set-PSReadLineOption -PredictionViewStyle ListView -ShowToolTips:$True -HistoryNoDuplicates:$True
 Set-PSReadLineOption -Colors @{
 	Command            = 'Yellow'
-	Number             = 'White'
+	Number             = '#D84ACD'
 	Member             = 'DarkGray'
 	Operator           = 'Green'
 	Type               = 'DarkRed'
 	Variable           = 'DarkGreen'
 	Parameter          = 'Green'
 	ContinuationPrompt = 'DarkGray'
-	Default            = '#D84ACD'
+	Default            = 'White'
 	Error              = 'Red'
 	String             = 'Blue'
 	}
