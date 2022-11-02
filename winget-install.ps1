@@ -10,3 +10,4 @@ winget install --id Skillbrains.Lightshot -h -e --accept-source-agreements --acc
 winget install --id ProtonTechnologies.ProtonVPN -h -e --accept-source-agreements --accept-package-agreements
 winget install --id 7zip.7zip -h -e --accept-source-agreements --accept-package-agreements
 winget install --id Google.Drive -h -e --accept-source-agreements --accept-package-agreements
+winget install --id ALCPU.CoreTemp -h -e --accept-source-agreements --accept-package-agreements
