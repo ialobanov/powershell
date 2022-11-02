@@ -11,17 +11,17 @@ Import-Module -SkipEditionCheck -Force -Name 'PSReadLine'
 Set-PSReadLineOption -EditMode Emacs -PredictionSource History -BellStyle None -ViModeIndicator Cursor # -ViModeChangeHandler $OnViModeChange
 Set-PSReadLineOption -PredictionViewStyle ListView -ShowToolTips:$True -HistoryNoDuplicates:$True
 Set-PSReadLineOption -Colors @{
-	Command            = 'White'
-	Number             = 'Gray'
+	Command            = 'Yellow'
+	Number             = 'White'
 	Member             = 'DarkGray'
 	Operator           = 'Green'
-	Type               = 'Green'
+	Type               = 'DarkRed'
 	Variable           = 'DarkGreen'
 	Parameter          = 'Green'
 	ContinuationPrompt = 'DarkGray'
-	Default            = 'Yellow'
-	Error              = 'red'
-	String             = 'DarkYellow'
+	Default            = '#F001F0'
+	Error              = 'Red'
+	String             = 'Blue'
 	}
 
 # Functions
