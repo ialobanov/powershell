@@ -11,7 +11,7 @@ Import-Module -SkipEditionCheck -Force -Name 'PSReadLine'
 Set-PSReadLineOption -EditMode Emacs -PredictionSource History -BellStyle None -ViModeIndicator Cursor # -ViModeChangeHandler $OnViModeChange
 Set-PSReadLineOption -PredictionViewStyle ListView -ShowToolTips:$True -HistoryNoDuplicates:$True
 Set-PSReadLineOption -Colors @{
-	Command            = 'DarkCyan'
+	Command            = 'White'
 	Number             = 'Gray'
 	Member             = 'DarkGray'
 	Operator           = 'Green'
