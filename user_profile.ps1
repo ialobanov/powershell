@@ -21,7 +21,7 @@ Set-PSReadLineOption -Colors @{
 	ContinuationPrompt = 'DarkGray'
 	Default            = 'White'
 	Error              = 'Red'
-	String             = '#598AFC'
+	String             = 'Blue'
 	}
 
 # Functions
