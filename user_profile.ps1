@@ -6,7 +6,7 @@ Import-Module -SkipEditionCheck -Force -Name '7Zip4Powershell'
 Import-Module -SkipEditionCheck -Force -Name 'PSWindowsUpdate'
 Import-Module -SkipEditionCheck -Force -Name 'VPNCredentialsHelper'
 Import-Module -SkipEditionCheck -Force -Name 'PSReadLine'
-Import-Module -SkipEditionCheck -Force -Name 'z'
+# Import-Module -SkipEditionCheck -Force -Name 'z'
 Import-Module -SkipEditionCheck -Force -Name 'PSFzf'
 
 # PSReadline options
@@ -26,7 +26,7 @@ Set-PSReadLineOption -Colors @{
 	String             = 'Blue'
 	}
 Set-PSReadlineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
-Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f'-PSReadlineChordReverseHistory 'Ctrl+r'
+Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Functions
 Function IndeedNovVPNOn {rasphone "Indeed-ID.VPN.Novgorod"}
@@ -39,14 +39,11 @@ Function shutdownreboot {shutdown /r /t 0}
 Function wincheck {sudo Get-WindowsUpdate}
 Function winupdate {sudo Get-WindowsUpdate -AcceptAll -Install}
 Function reloadpowershell {Invoke-Command { & "pwsh.exe"       } -NoNewScope}
-<<<<<<< HEAD
 Function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
-    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
+  Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
   }
-=======
 Function checkall {sudo Get-WindowsUpdate -AcceptAll -Install | winget upgrade --all | scoop update --all}
->>>>>>> 94be86a39f7c5076a2f293d008930806c0d01031
 
 # Alias
 Set-Alias iion IndeedNovVPNOn
