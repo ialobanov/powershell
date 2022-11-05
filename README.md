@@ -8,7 +8,7 @@ It's my personal powershell setup and some software for deployment on new OS (te
 [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/en-us/download/confirmation.aspx?id=53840)  
 [Nerd fonts](https://github.com/ryanoasis/nerd-fonts)  
   
-## How to use  
+## Installation
 ```
 winget install -SkipPublisherCheck -AcceptLicense -h --id Git.Git -Force
 winget install -SkipPublisherCheck -AcceptLicense -h --id JanDeDobbeleer.OhMyPosh -Force
