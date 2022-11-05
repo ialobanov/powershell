@@ -5,10 +5,10 @@ It's my personal powershell setup and some software for deployment on new OS (te
 ## Prerequisites    
 [Windows Terminal](https://github.com/microsoft/terminal)  
 [PowerShell](https://github.com/PowerShell/PowerShell/releases/tag/v7.2.7)  
-[Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/en-us/download/confirmation.aspx?id=53840)  
 [Nerd fonts](https://github.com/ryanoasis/nerd-fonts)  
-  
-## How to use  
+[Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/en-us/download/confirmation.aspx?id=53840) `for correctly work NeoVim`  
+
+## Installation
 ```
 winget install -SkipPublisherCheck -AcceptLicense -h --id Git.Git -Force
 winget install -SkipPublisherCheck -AcceptLicense -h --id JanDeDobbeleer.OhMyPosh -Force
