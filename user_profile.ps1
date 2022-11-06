@@ -10,8 +10,12 @@ Import-Module -SkipEditionCheck -Force -Name 'PSReadLine'
 Import-Module -SkipEditionCheck -Force -Name 'PSFzf'
 
 # PSReadline options
-Set-PSReadLineOption -EditMode Emacs -PredictionSource History -BellStyle None -ViModeIndicator Cursor # -ViModeChangeHandler $OnViModeChange
-Set-PSReadLineOption -PredictionViewStyle ListView -ShowToolTips:$True -HistoryNoDuplicates:$True
+Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -PredictionSource History 
+Set-PSReadLineOption -BellStyle None 
+Set-PSReadLineOption -PredictionViewStyle ListView 
+Set-PSReadLineOption -ShowToolTips:$True 
+Set-PSReadLineOption -HistoryNoDuplicates:$True
 Set-PSReadLineOption -Colors @{
 	Command            = 'Yellow'
 	Number             = '#D84ACD'
