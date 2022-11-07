@@ -31,7 +31,11 @@ cd ./powershell
 - curl 
 - sudo 
 - git 
-- webtorrent
+- webtorrent  
+-  nodejs  
+- ripgrep  
+- wget  
+- fzf   
 ## list of winget software  
 - OhMyPosh
 - Google Chrome
