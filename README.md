@@ -35,7 +35,10 @@ cd ./powershell
 -  nodejs  
 - ripgrep  
 - wget  
-- fzf   
+- fzf  
+- npm  
+- gcc  
+- luarocks    
 ## list of winget software  
 - OhMyPosh
 - Google Chrome
