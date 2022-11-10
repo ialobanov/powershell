@@ -34,8 +34,7 @@ Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory
 # Functions
 Function IndeedNovVPNOn {rasphone "Indeed-ID.VPN.Novgorod"}
 Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue |
-	sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction SilentlyContinue | 
-  Clear-RecycleBin -force
+sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction SilentlyContinue | Clear-RecycleBin -force
 	}
 Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.Novgorod" /disconnect}
 Function shutdownoff {shutdown /p}
@@ -65,7 +64,7 @@ Set-Alias chrome 'C:\Program Files\Google\Chrome\Application\chrome.exe'
 Set-Alias zoom '~\AppData\Roaming\Zoom\bin\Zoom.exe'
 Set-Alias reboot shutdownreboot
 Set-Alias poweroff shutdownoff
-Set-Alias clean CleanTemp
+Set-Alias cln CleanTemp
 Set-Alias winup winupdate
 Set-Alias winchk wincheck
 Set-Alias touch New-Item
