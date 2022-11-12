@@ -71,3 +71,4 @@ Set-Alias touch New-Item
 Set-Alias reload reloadpowershell
 Set-Alias chk checkall
 Set-Alias proton 'C:\Program Files (x86)\Proton Technologies\ProtonVPN\ProtonVPN.exe'
+Set-Alias vag vagrant
