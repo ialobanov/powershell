@@ -12,8 +12,7 @@ It's my personal powershell setup and some software for deployment on new OS (te
 ```
 winget install --accept-package-agreements --accept-source-agreements -h --id Git.Git --Force  
 winget install --accept-package-agreements --accept-source-agreements -h --id JanDeDobbeleer.OhMyPosh --Force
-exit
-> Win + 1 [Windows global hotkeys for run powershell]
+Reload PowerShell
 Add-Content $PROFILE '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
 mkdir ~/.config
 cd ~/.config
