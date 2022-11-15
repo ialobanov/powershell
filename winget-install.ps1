@@ -1,4 +1,3 @@
-winget install --id JanDeDobbeleer.OhMyPosh -h -e --accept-source-agreements --accept-package-agreements
 winget install --id Google.Chrome -h -e --accept-source-agreements --accept-package-agreements 
 winget install --id Telegram.TelegramDesktop -h -e --accept-source-agreements --accept-package-agreements
 winget install --id Bitwarden.Bitwarden -h -e --accept-source-agreements --accept-package-agreements
