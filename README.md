@@ -10,8 +10,10 @@ It's my personal powershell setup and some software for deployment on new OS (te
 
 ## Installation
 ```
+irm get.scoop.sh | iex
 winget install --accept-package-agreements --accept-source-agreements -h --id Git.Git --Force  
 winget install --accept-package-agreements --accept-source-agreements -h --id JanDeDobbeleer.OhMyPosh --Force
+
 Reload PowerShell
 Add-Content $PROFILE '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
 mkdir ~/.config
