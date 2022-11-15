@@ -4,3 +4,4 @@ Install-Module -SkipPublisherCheck -AcceptLicense -Name 7Zip4Powershell -Scope C
 Install-Module -SkipPublisherCheck -AcceptLicense -Name PSWindowsUpdate -Scope CurrentUser -Force
 Install-Module -SkipPublisherCheck -AcceptLicense -Name VPNCredentialsHelper -Scope CurrentUser -Force
 Install-Module -SkipPublisherCheck -AcceptLicense -Name PSFzf -Scope CurrentUser -Force
+Install-Module -SkipPublisherCheck -AcceptLicense -Name z -Scope CurrentUser -Force
