@@ -19,6 +19,7 @@ cd ~/.config
 git clone https://github.com/lobanov4real/powershell.git
 cd ./powershell 
 ./run-install.ps1  
+After installation reload PowerShell
 ```
 ## List of powershell modules  
 - Terminal-Icons
