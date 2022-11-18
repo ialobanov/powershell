@@ -1,12 +1,12 @@
 oh-my-posh init pwsh --config "~\AppData\Local\Programs\oh-my-posh\themes\takuya.omp.json" | Invoke-Expression
 
 # Import-Module
-Import-Module -SkipEditionCheck -Force -Name 'Terminal-Icons'
-Import-Module -SkipEditionCheck -Force -Name '7Zip4Powershell'
-Import-Module -SkipEditionCheck -Force -Name 'PSWindowsUpdate'
-Import-Module -SkipEditionCheck -Force -Name 'VPNCredentialsHelper'
-Import-Module -SkipEditionCheck -Force -Name 'PSReadLine'
-Import-Module -SkipEditionCheck -Force -Name 'PSFzf'
+Import-Module -SkipEditionCheck -Force -Name Terminal-Icons
+Import-Module -SkipEditionCheck -Force -Name 7Zip4Powershell
+Import-Module -SkipEditionCheck -Force -Name PSWindowsUpdate
+Import-Module -SkipEditionCheck -Force -Name VPNCredentialsHelper
+Import-Module -SkipEditionCheck -Force -Name PSReadLine
+Import-Module -SkipEditionCheck -Force -Name PSFzf
 
 # PSReadline options
 Set-PSReadLineOption -EditMode Emacs
