@@ -10,16 +10,18 @@ It's my personal powershell setup and some software for deployment on new OS (te
 
 ## Installation
 ```
-winget install -SkipPublisherCheck -AcceptLicense -h --id Git.Git -Force
-winget install -SkipPublisherCheck -AcceptLicense -h --id JanDeDobbeleer.OhMyPosh -Force
-exit
-> Win + 1 [Windows global hotkeys for run powershell]
+irm get.scoop.sh | iex
+winget install --accept-package-agreements --accept-source-agreements -h --id Git.Git --Force  
+winget install --accept-package-agreements --accept-source-agreements -h --id JanDeDobbeleer.OhMyPosh --Force
+
+Reload PowerShell
 Add-Content $PROFILE '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
 mkdir ~/.config
 cd ~/.config
 git clone https://github.com/lobanov4real/powershell.git
 cd ./powershell 
 ./run-install.ps1  
+After installation reload PowerShell
 ```
 ## List of powershell modules  
 - Terminal-Icons
