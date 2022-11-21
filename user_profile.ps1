@@ -47,6 +47,7 @@ Function which ($command) {
   Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
   }
 Function checkall {sudo Get-WindowsUpdate -AcceptAll -Install | winget upgrade --all | scoop update --all}
+Function nvimclean {rm -r ~/AppData/Local/nvim-data/swap/ | rm -r ~/AppData/Local/nvim-data/shada/}
 
 # Alias
 Set-Alias iion IndeedNovVPNOn
@@ -72,3 +73,4 @@ Set-Alias reload reloadpowershell
 Set-Alias chk checkall
 Set-Alias proton 'C:\Program Files (x86)\Proton Technologies\ProtonVPN\ProtonVPN.exe'
 Set-Alias vag vagrant
+Set-Alias vimcln nvimclean
