@@ -8,6 +8,15 @@
       "alignment": "left",
       "segments": [
         {
+          "foreground": "#63f556",
+          "properties": {
+            "macos": "mac"
+          },
+          "style": "plain",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "type": "os"
+        },
+        {
           "foreground": "#e6f4ff",
           "properties": {
             "folder_separator_icon": "/",
