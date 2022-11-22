@@ -8,22 +8,7 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#f5f102",
-          "properties": {
-            "macos": "mac"
-          },
-          "style": "plain",
-          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
-          "type": "os"
-        },
-        {
-          "foreground": "#e833ac",
-          "style": "plain",
-          "template": "{{ .UserName }}:",
-          "type": "session"
-        },
-        {
-          "foreground": "#62c0ff",
+          "foreground": "#e6f4ff",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
