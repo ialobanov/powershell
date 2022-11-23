@@ -47,7 +47,7 @@ Function which ($command) {
   Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
   }
 Function checkall {sudo Get-WindowsUpdate -AcceptAll -Install | winget upgrade --all | scoop update --all}
-Function nvimclean {rm -r ~/AppData/Local/nvim-data/swap/ | rm -r ~/AppData/Local/nvim-data/shada/}
+Function nvimclean {Remove-Item -r ~/AppData/Local/nvim-data/swap/ | Remove-Item -r ~/AppData/Local/nvim-data/shada/}
 
 # Alias
 Set-Alias iion IndeedNovVPNOn
