@@ -17,7 +17,7 @@
           "type": "os"
         },
         {
-          "foreground": "#e833ac",
+          "foreground": "#fa41aa",
           "style": "plain",
           "template": "{{ .UserName }}:",
           "type": "session"
