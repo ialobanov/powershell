@@ -6,9 +6,9 @@
       "segments": [
         {
           "foreground": "#27f23b",
-          "style": "diamond",
-          "template": " {{ .Name }} ",
-          "type": "shell"
+          "style": "plain",
+          "template": "pwsh",
+          "type": "text"
         },
         {
           "foreground": "#62c0ff",
