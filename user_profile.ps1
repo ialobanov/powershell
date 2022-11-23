@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "~\.config\powershell\illusi0n.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "~/.config/powershell/illusi0n.omp.json" | Invoke-Expression
 
 # Import-Module
 Import-Module -SkipEditionCheck -Force -Name Terminal-Icons
