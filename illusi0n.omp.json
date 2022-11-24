@@ -11,7 +11,7 @@
           "type": "text"
         },
         {
-          "foreground": "#62c0ff",
+          "foreground": "#44C1FF",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
