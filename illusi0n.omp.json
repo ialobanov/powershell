@@ -20,7 +20,7 @@
           "type": "path"
         },
         {
-          "foreground": "#6fd179",
+          "foreground": "#06BA49",
           "foreground_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#CBCF08{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#27f23b{{ end }}",
