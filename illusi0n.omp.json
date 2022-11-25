@@ -11,8 +11,7 @@
           "type": "text"
         },
         {
-          "foreground": "#44C1FF",
-          "foreground": "#61AFEF",
+          "foreground": "#498BFF",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
@@ -23,7 +22,7 @@
         {
           "foreground": "#22D434",
           "foreground_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#E4E809{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#CDD108{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#27f23b{{ end }}",
             "{{ if gt .Ahead 0 }}#9962ff{{ end }}",
             "{{ if gt .Behind 0 }}#c062ff{{ end }}"
@@ -39,7 +38,7 @@
           "type": "git"
         },
         {
-          "foreground": "#61AFEF",
+          "foreground": "#498BFF",
           "style": "plain",
           "template": "\u2B9E ",
           "type": "text"
