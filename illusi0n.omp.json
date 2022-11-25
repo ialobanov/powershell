@@ -5,13 +5,13 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#06BA49",
+          "foreground": "#EFF2F7",
           "style": "plain",
           "template": "pwsh",
           "type": "text"
         },
         {
-          "foreground": "#2AA198",
+          "foreground": "#61AFEF",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
@@ -20,9 +20,9 @@
           "type": "path"
         },
         {
-          "foreground": "#06BA49",
+          "foreground": "#22D434",
           "foreground_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#CBCF08{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#E4E809{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#27f23b{{ end }}",
             "{{ if gt .Ahead 0 }}#9962ff{{ end }}",
             "{{ if gt .Behind 0 }}#c062ff{{ end }}"
@@ -34,11 +34,11 @@
             "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": "<#d1dade>on</> {{.UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "template": "<#EFF2F7>on</> {{.UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
           "type": "git"
         },
         {
-          "foreground": "#2AA198",
+          "foreground": "#61AFEF",
           "style": "plain",
           "template": "\u2B9E ",
           "type": "text"
