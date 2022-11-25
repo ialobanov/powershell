@@ -11,7 +11,7 @@
           "type": "text"
         },
         {
-          "foreground": "#90c0e0",
+          "foreground": "#3189C4",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
@@ -38,7 +38,7 @@
           "type": "git"
         },
         {
-          "foreground": "#90c0e0",
+          "foreground": "#3189C4",
           "style": "plain",
           "template": "\u2B9E ",
           "type": "text"
