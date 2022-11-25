@@ -15,19 +15,20 @@ Set-PSReadLineOption -BellStyle None
 Set-PSReadLineOption -PredictionViewStyle ListView 
 Set-PSReadLineOption -ShowToolTips:$True 
 Set-PSReadLineOption -HistoryNoDuplicates:$True
-Set-PSReadLineOption -Colors @{
-	Command            = 'Yellow'
-	Number             = '#D84ACD'
-	Member             = 'DarkGray'
-	Operator           = 'Green'
-	Type               = 'DarkRed'
-	Variable           = 'DarkGreen'
-	Parameter          = 'Green'
-	ContinuationPrompt = 'DarkGray'
-	Default            = 'White'
-	Error              = 'Red'
-	String             = 'Blue'
-	}
+# Set-PSReadLineOption -Colors @{
+# 	Command            = 'Yellow'
+# 	Number             = '#D84ACD'
+# 	Member             = 'DarkGray'
+# 	Operator           = 'Green'
+# 	Type               = 'DarkRed'
+# 	Variable           = 'DarkGreen'
+# 	Parameter          = 'Green'
+# 	ContinuationPrompt = 'DarkGray'
+# 	Default            = 'White'
+# 	Error              = 'Red'
+# 	String             = 'Blue'
+# 	}
+
 Set-PSReadlineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
