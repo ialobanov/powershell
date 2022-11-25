@@ -5,13 +5,13 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#6fd179",
+          "foreground": "#06BA49",
           "style": "plain",
           "template": "pwsh",
           "type": "text"
         },
         {
-          "foreground": "#3189C4",
+          "foreground": "#2AA198",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
@@ -38,7 +38,7 @@
           "type": "git"
         },
         {
-          "foreground": "#3189C4",
+          "foreground": "#2AA198",
           "style": "plain",
           "template": "\u2B9E ",
           "type": "text"
