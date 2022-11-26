@@ -6,7 +6,6 @@ It's my personal powershell setup and some software for deployment on new OS (te
 [Windows Terminal](https://github.com/microsoft/terminal)  
 [PowerShell](https://github.com/PowerShell/PowerShell)  
 [Nerd fonts](https://github.com/ryanoasis/nerd-fonts)  
-[Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/en-us/download/confirmation.aspx?id=53840) `for correctly work NeoVim`  
 
 ## Installation
 ```
