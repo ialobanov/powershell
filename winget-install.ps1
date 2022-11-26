@@ -1,4 +1,4 @@
-winget install --id Google.Chrome -h -e --accept-source-agreements --accept-package-agreements 
+winget install --id Google.Chrome -h -e --accept-source-agreements --accept-package-agreements --force  
 winget install --id Telegram.TelegramDesktop -h -e --accept-source-agreements --accept-package-agreements
 winget install --id Bitwarden.Bitwarden -h -e --accept-source-agreements --accept-package-agreements
 winget install --id Obsidian.Obsidian -h -e --accept-source-agreements --accept-package-agreements
