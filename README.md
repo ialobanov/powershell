@@ -31,6 +31,7 @@ After installation reload PowerShell
 - VPNCredentialsHelper
 ## List of scoop software  
 - neovim 
+- vcredist2022  
 - curl 
 - sudo 
 - git 
