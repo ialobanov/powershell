@@ -47,6 +47,7 @@ After installation reload PowerShell
 - tree-sitter  
 - gzip  
 - python  
+- cmake  
 ## list of winget software  
 - OhMyPosh
 - Google Chrome
