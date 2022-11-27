@@ -36,13 +36,17 @@ After installation reload PowerShell
 - sudo 
 - git 
 - webtorrent  
--  nodejs  
+- nodejs  
 - ripgrep  
 - wget  
 - fzf  
 - npm  
 - gcc  
-- luarocks    
+- luarocks
+- innounp 
+- tree-sitter  
+- gzip  
+- python  
 ## list of winget software  
 - OhMyPosh
 - Google Chrome
