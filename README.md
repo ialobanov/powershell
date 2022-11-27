@@ -54,7 +54,6 @@ After installation reload PowerShell
 - Telegram Desktop
 - Bitwarden
 - Obsidian
-- Speccy
 - Slack
 - Zoom
 - Lightshot
