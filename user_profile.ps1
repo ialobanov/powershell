@@ -35,8 +35,8 @@ Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory
 # Functions
 Function IndeedNovVPNOn {rasphone "Indeed-ID.VPN.Novgorod"}
 Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue |
-sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction SilentlyContinue | Clear-RecycleBin -force
-	}
+sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction SilentlyContinue}
+Function cleanrb {Clear-RecycleBin -force}
 Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.Novgorod" /disconnect}
 Function shutdownoff {shutdown /p}
 Function shutdownreboot {shutdown /r /t 0}
@@ -75,3 +75,4 @@ Set-Alias upd updateall
 Set-Alias proton 'C:\Program Files (x86)\Proton Technologies\ProtonVPN\ProtonVPN.exe'
 Set-Alias vag vagrant
 Set-Alias vimcln nvimclean
+Set-Alias clnrb cleanrb
