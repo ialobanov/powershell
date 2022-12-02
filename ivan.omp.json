@@ -7,8 +7,8 @@
         {
           "foreground": "#EFF2F7",
           "style": "plain",
-          "template": "{{ .UserName }}$",
-          "type": "session"
+          "template": "pwsh:",
+          "type": "text"
         },
         {
           "foreground": "#498BFF",
