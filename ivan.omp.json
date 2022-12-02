@@ -7,8 +7,8 @@
         {
           "foreground": "#EFF2F7",
           "style": "plain",
-          "template": "pwsh",
-          "type": "text"
+          "template": "{{ .UserName }}$",
+          "type": "session"
         },
         {
           "foreground": "#498BFF",
@@ -22,7 +22,7 @@
         {
           "foreground": "#31B822",
           "foreground_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#CDD108{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#E3E01B{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#27f23b{{ end }}",
             "{{ if gt .Ahead 0 }}#9962ff{{ end }}",
             "{{ if gt .Behind 0 }}#c062ff{{ end }}"
