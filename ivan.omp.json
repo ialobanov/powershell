@@ -25,7 +25,7 @@
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#B58900{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#27f23b{{ end }}",
             "{{ if gt .Ahead 0 }}#9962ff{{ end }}",
-            "{{ if gt .Behind 0 }}#c062ff{{ end }}"
+            "{{ if gt .Behind 0 }}#6C71C4{{ end }}"
           ],
           "properties": {
             "branch_max_length": 25,
