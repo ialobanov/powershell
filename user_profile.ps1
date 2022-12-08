@@ -20,11 +20,11 @@ Set-PSReadlineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Functions
-Function IndeedNovVPNOn {rasphone "Indeed-ID.VPN.Novgorod"}
+Function IndeedNovVPNOn {rasphone "Indeed-ID.VPN.Novgorod.New"}
+Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.Novgorod.New" /disconnect}
 Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction  SilentlyContinue |
 sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction  SilentlyContinue}
 Function cleanrb {Clear-RecycleBin -force}
-Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.Novgorod" /disconnect}
 Function shutdownoff {shutdown /p}
 Function shutdownreboot {shutdown /r /t 0}
 Function wincheck {sudo Get-WindowsUpdate}
