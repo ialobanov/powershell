@@ -61,6 +61,6 @@ Set-Alias reload reloadpowershell
 Set-Alias upd updateall
 Set-Alias proton 'C:\Program Files (x86)\Proton Technologies\ProtonVPN\ProtonVPN.exe'
 Set-Alias vag vagrant
-Set-Alias vimcln nvimclean
+Set-Alias clnvim nvimclean
 Set-Alias clnrb cleanrb
 Set-Alias vbox 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle VM VirtualBox\Oracle VM VirtualBox.lnk'
