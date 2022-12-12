@@ -27,14 +27,12 @@ sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction  SilentlyC
 Function cleanrb {Clear-RecycleBin -force}
 Function shutdownoff {shutdown /p}
 Function shutdownreboot {shutdown /r /t 0}
-Function wincheck {sudo Get-WindowsUpdate}
-Function winupdate {sudo Get-WindowsUpdate -AcceptAll -Install}
 Function reloadpowershell {Invoke-Command { & "pwsh.exe"       } -NoNewScope}
 Function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
   Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
   }
-Function updateall {sudo Get-WindowsUpdate -AcceptAll -Install | winget upgrade --all | scoop update --all}
+Function updateall {winget upgrade --all SilentlyContinue| scoop update --all}
 Function nvimclean {Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*}
 
 # Alias
@@ -54,8 +52,6 @@ Set-Alias zoom '~\AppData\Roaming\Zoom\bin\Zoom.exe'
 Set-Alias reboot shutdownreboot
 Set-Alias poweroff shutdownoff
 Set-Alias cln CleanTemp
-Set-Alias winup winupdate
-Set-Alias winchk wincheck
 Set-Alias touch New-Item
 Set-Alias reload reloadpowershell
 Set-Alias upd updateall
