@@ -22,7 +22,7 @@ Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory
 # Functions
 Function IndeedNovVPNOn {rasphone "Indeed-ID.VPN.Novgorod.New"}
 Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.Novgorod.New" /disconnect}
-Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction  SilentlyContinue |
+Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue |
 sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction  SilentlyContinue}
 Function cleanrb {Clear-RecycleBin -force}
 Function shutdownoff {shutdown /p}
