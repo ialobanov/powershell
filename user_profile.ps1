@@ -22,7 +22,7 @@ Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory
 # Functions
 Function IndeedNovVPNOn {rasphone "Indeed-ID.VPN.Novgorod.New"}
 Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.Novgorod.New" /disconnect}
-Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction  SilentlyContinue |
+Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue |
 sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction  SilentlyContinue}
 Function cleanrb {Clear-RecycleBin -force}
 Function shutdownoff {shutdown /p}
@@ -32,7 +32,11 @@ Function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
   Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
   }
+<<<<<<< HEAD
 Function updateall {winget upgrade --all && scoop update --all}
+=======
+Function updateall {scoop update --all | winget upgrade --all}
+>>>>>>> 32def31badd3497fcdfb3eacdc3f06a189f04dde
 Function nvimclean {Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*}
 
 # Alias
