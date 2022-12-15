@@ -23,7 +23,7 @@
           "foreground": "#859900",
           "foreground_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#B58900{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#27f23b{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#859900{{ end }}",
             "{{ if gt .Ahead 0 }}#6C71C4{{ end }}",
             "{{ if gt .Behind 0 }}#6C71C4{{ end }}"
           ],
