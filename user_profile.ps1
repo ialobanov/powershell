@@ -32,11 +32,7 @@ Function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
   Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
   }
-<<<<<<< HEAD
 Function updateall {winget upgrade --all && scoop update --all}
-=======
-Function updateall {scoop update --all | winget upgrade --all}
->>>>>>> 32def31badd3497fcdfb3eacdc3f06a189f04dde
 Function nvimclean {Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*}
 
 # Alias
