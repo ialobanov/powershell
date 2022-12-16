@@ -5,9 +5,6 @@ oh-my-posh init pwsh --config "~/.config/powershell/ivan.omp.json" | Invoke-Expr
 
 # Import-Module
 Import-Module -SkipEditionCheck -Force -Name Terminal-Icons
-Import-Module -SkipEditionCheck -Force -Name 7Zip4Powershell
-Import-Module -SkipEditionCheck -Force -Name PSWindowsUpdate
-Import-Module -SkipEditionCheck -Force -Name VPNCredentialsHelper
 Import-Module -SkipEditionCheck -Force -Name PSReadLine
 Import-Module -SkipEditionCheck -Force -Name PSFzf
 
