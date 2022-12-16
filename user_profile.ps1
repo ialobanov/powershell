@@ -1,3 +1,6 @@
+# set PowerShell to UTF-8
+[console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
+
 oh-my-posh init pwsh --config "~/.config/powershell/ivan.omp.json" | Invoke-Expression
 
 # Import-Module
