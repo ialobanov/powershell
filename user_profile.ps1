@@ -23,8 +23,6 @@ Set-PSReadlineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Functions
-Function IndeedNovVPNOn {rasphone "Indeed-ID.VPN.Novgorod.New"}
-Function IndeedNovVPNOff {rasdial "Indeed-ID.VPN.Novgorod.New" /disconnect}
 Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue |
 sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction  SilentlyContinue}
 Function cleanrb {Clear-RecycleBin -force}
@@ -39,8 +37,6 @@ Function updateall {winget upgrade --all && scoop update --all}
 Function nvimclean {Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*}
 
 # Alias
-Set-Alias iion IndeedNovVPNOn
-Set-Alias iioff IndeedNovVPNOff
 Set-Alias cle clear
 Set-Alias vim nvim
 Set-Alias ll ls
