@@ -41,7 +41,7 @@ Set-Alias g git
 Set-Alias grep findstr
 Set-Alias wi winget
 Set-Alias slack ~\AppData\Local\slack\slack.exe
-Set-Alias indeed '~\OneDrive\Documents\Indeed Identity.rdp'
+Set-Alias indeed '~\OneDrive\Documents\Default.rdp'
 Set-Alias tlg '~\AppData\Roaming\Telegram Desktop\Telegram.exe'
 Set-Alias chrome 'C:\Program Files\Google\Chrome\Application\chrome.exe'
 Set-Alias zoom '~\AppData\Roaming\Zoom\bin\Zoom.exe'
