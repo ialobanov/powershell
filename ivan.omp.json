@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#839496",
+          "foreground": "#f1f2ee",
           "style": "plain",
           "template": "pwsh:",
           "type": "text"
@@ -20,10 +20,10 @@
           "type": "path"
         },
         {
-          "foreground": "#1f9900",
+          "foreground": "#42C219",
           "foreground_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#B58900{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#85990a{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#E1E305{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#42C219{{ end }}",
             "{{ if gt .Ahead 0 }}#6C71C4{{ end }}",
             "{{ if gt .Behind 0 }}#6C71C4{{ end }}"
           ],
@@ -34,7 +34,7 @@
             "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": "<#839496>on</> {{.UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "template": "<#f1f2ee>on</> {{.UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
           "type": "git"
         },
         {
