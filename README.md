@@ -35,18 +35,15 @@ After installation reload PowerShell
 - curl 
 - sudo 
 - git 
-- webtorrent  
-- nodejs  
+- webtorrent 
 - ripgrep  
 - wget  
 - fzf  
-- npm  
 - gcc  
 - luarocks
 - innounp 
 - tree-sitter  
-- gzip  
-- python  
+- gzip   
 - cmake  
 ## list of winget software  
 - OhMyPosh
@@ -57,9 +54,8 @@ After installation reload PowerShell
 - Slack
 - Zoom
 - Lightshot
-- ProtonVPN
 - 7zip  
 - Core Temp  
   
 > **Warning**  
-Some software: ***Google Chrome***, ***Speccy***, ***Zoom***, ***Lightshot***, ***ProtonVPN***, ***7zip*** require and ***Core Temp*** a privileged right to install. You can run powershell as Administrator or just confirm operation during installation.  
+Some software: ***Google Chrome***, ***Speccy***, ***Zoom***, ***Lightshot***, ***7zip*** require and ***Core Temp*** a privileged right to install. You can run powershell as Administrator or just confirm operation during installation.  
