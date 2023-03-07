@@ -40,11 +40,11 @@ After installation reload PowerShell
 - wget  
 - fzf  
 - gcc  
+- lua
 - luarocks
 - innounp 
 - tree-sitter  
-- gzip   
-- cmake  
+- gzip  
 ## list of winget software  
 - OhMyPosh
 - Google Chrome
@@ -55,7 +55,7 @@ After installation reload PowerShell
 - Zoom
 - Lightshot
 - 7zip  
-- Core Temp  
+- Core.Temp  
   
 > **Warning**  
 Some software: ***Google Chrome***, ***Speccy***, ***Zoom***, ***Lightshot***, ***7zip*** require and ***Core Temp*** a privileged right to install. You can run powershell as Administrator or just confirm operation during installation.  
