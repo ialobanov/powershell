@@ -2,43 +2,53 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
+      "type": "rprompt"
+    },
+    {
       "alignment": "left",
       "segments": [
         {
-          "background": "#1478DB",
-          "foreground": "#000000",
-          "leading_diamond": "\ue0b6",
-          "trailing_diamond": "\uE0B0",
+          "foreground": "#ff8800",
+          "style": "plain",
+          "template": "$",
+          "type": "text"
+        },
+        {
+          "foreground": "#62c0ff",
           "properties": {
+            "folder_separator_icon": "/",
             "style": "full"
           },
-          "style": "diamond",
-          "template": "{{ .Path }} ",
+          "style": "plain",
           "type": "path"
         },
         {
-          "background": "#3AD900",
-          "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFC600{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFCC80{{ end }}",
-            "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
-            "{{ if gt .Behind 0 }}#B388FF{{ end }}"
+          "foreground": "#62c0ff",
+          "foreground_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#6287ff{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#7f62ff{{ end }}",
+            "{{ if gt .Ahead 0 }}#9962ff{{ end }}",
+            "{{ if gt .Behind 0 }}#c062ff{{ end }}"
           ],
-          "foreground": "#000000",
-          "leading_diamond": "<transparent,background>\uE0B0</>",
-          "trailing_diamond": "\ue0b4",
           "properties": {
+            "branch_max_length": 25,
             "fetch_stash_count": true,
-            "fetch_status": true
+            "fetch_status": true,
+            "fetch_upstream_icon": true
           },
-          "style": "diamond",
-          "template": " {{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00> \uf046 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "style": "plain",
+          "template": "<#ff8800>on</> {{.UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
+        },
+        {
+          "foreground": "#ff8800",
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "text"
         }
       ],
       "type": "prompt"
     }
   ],
-  "final_space": true,
   "version": 2
 }
