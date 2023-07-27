@@ -1,7 +1,4 @@
-# set PowerShell to UTF-8
-[console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
-
-oh-my-posh init pwsh --config "~/.config/powershell/ivan.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "C:\Users\ivan.lobanov\.config\powershell\ivan.omp.json" | Invoke-Expression
 
 # Import-Module
 Import-Module -SkipEditionCheck -Force -Name Terminal-Icons
@@ -16,6 +13,8 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -ShowToolTips:$True 
 Set-PSReadLineOption -HistoryNoDuplicates:$True
 Set-PSReadlineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
+
+
 # PSFzf options
 Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
@@ -40,7 +39,7 @@ Set-Alias ll ls
 Set-Alias g git
 Set-Alias grep findstr
 Set-Alias wi winget
-Set-Alias slack ~\AppData\Local\slack\slack.exe
+Set-Alias slack '~\AppData\Local\slack\slack.exe'
 Set-Alias indeed '~\OneDrive\Documents\Default.rdp'
 Set-Alias tlg '~\AppData\Roaming\Telegram Desktop\Telegram.exe'
 Set-Alias chrome 'C:\Program Files\Google\Chrome\Application\chrome.exe'
