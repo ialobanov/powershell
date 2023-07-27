@@ -26,7 +26,6 @@ cd ./powershell
 ./run-install.ps1  
 
 After installation reload PowerShell
-```
 
 ## List of powershell modules
 
