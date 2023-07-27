@@ -12,10 +12,10 @@ It's my personal powershell setup and some software for deployment on new OS (te
 
 ## Installation
 
-```Set-ExecutionPolicy RemoteSigned -Scope CurrentUser```
-```irm get.scoop.sh | iex```
-```winget install --accept-package-agreements --accept-source-agreements -h --id Git.Git --Force --source winget```  
-```winget install --accept-package-agreements --accept-source-agreements -h --id JanDeDobbeleer.OhMyPosh --Force --source winget```
+```Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
+winget install --accept-package-agreements --accept-source-agreements -h --id Git.Git --Force --source winget  
+winget install --accept-package-agreements --accept-source-agreements -h --id JanDeDobbeleer.OhMyPosh --Force --source winget```
 
 Reload PowerShell
 
