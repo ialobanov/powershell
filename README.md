@@ -24,7 +24,7 @@ Reload PowerShell
 ```
 Add-Content $PROFILE.CurrentUserCurrentHost '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
 cd ~/.config
-git clone <https://github.com/lobanov4real/powershell.git>
+git clone https://github.com/lobanov4real/powershell.git
 cd ./powershell
 run-install.ps1
 ```  
