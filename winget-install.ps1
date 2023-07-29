@@ -10,3 +10,4 @@ winget install --id ALCPU.CoreTemp -h -e --accept-source-agreements --accept-pac
 winget install --id Kitware.CMake -h -e --accept-source-agreements --accept-package-agreements --force --source winget
 winget install --id Python.Python.3.12 -h -e --accept-source-agreements --accept-package-agreements --force --source winget
 winget install --id OpenJS.NodeJS.LTS -h -e --accept-source-agreements --accept-package-agreements --force --source winget
+winget install --accept-package-agreements --accept-source-agreements -h --id Microsoft.VisualStudioCode --Force --source winget
