@@ -60,3 +60,23 @@ Set-Alias vag vagrant
 Set-Alias clnvim nvimclean
 Set-Alias clnrb cleanrb
 Set-Alias vbox 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle VM VirtualBox\Oracle VM VirtualBox.lnk'
+
+# CommandColor                           : "`e[93m"
+# CommentColor                           : "`e[32m"
+# ContinuationPromptColor                : "`e[37m"
+# DefaultTokenColor                      : "`e[37m"
+# EmphasisColor                          : "`e[96m"
+# ErrorColor                             : "`e[91m"
+# InlinePredictionColor                  : "`e[97;2;3m"
+# KeywordColor                           : "`e[92m"
+# ListPredictionColor                    : "`e[33m"
+# ListPredictionSelectedColor            : "`e[30;47m"
+# ListPredictionTooltipColor             : "`e[97;2;3m"
+# MemberColor                            : "`e[37m"
+# NumberColor                            : "`e[97m"
+# OperatorColor                          : "`e[90m"
+# ParameterColor                         : "`e[90m"
+# SelectionColor                         : "`e[30;47m"
+# StringColor                            : "`e[36m"
+# TypeColor                              : "`e[37m"
+# VariableColor                          : "`e[92m"
