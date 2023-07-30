@@ -1,5 +1,3 @@
-# Personal powershell setup on Windows (11)
-
 ## Description
 
 It's my personal powershell setup and some software for deployment on new OS (tested on Windows 11, 10). I use Oh My Posh to change standard look of powershell with own theme ***ivan***, you can choose different themes [here](https://ohmyposh.dev/docs/themes). I add some settings for promptline, usefull alias for me and color scheme. Inspired by [@Takuya Matsuyama](https://github.com/craftzdog) from youtube video [How to set up PowerShell prompt with Oh My Posh on Windows 11](https://www.youtube.com/watch?v=5-aK2_WwrmM).  
@@ -12,7 +10,7 @@ It's my personal powershell setup and some software for deployment on new OS (te
 
 ## Installation
 
-```
+```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm get.scoop.sh | iex
 winget install --accept-package-agreements --accept-source-agreements -h --id Git.Git --Force --source winget  
@@ -21,10 +19,10 @@ winget install --accept-package-agreements --accept-source-agreements -h --id Ja
 
 Reload PowerShell
 
-```
+```powershell
 Add-Content $PROFILE.CurrentUserCurrentHost '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
 cd ~/.config
-git clone <https://github.com/lobanov4real/powershell.git>
+git clone https://github.com/lobanov4real/powershell.git
 cd ./powershell
 run-install.ps1
 ```  
@@ -67,7 +65,12 @@ After installation reload PowerShell
 - Zoom
 - Lightshot
 - 7zip  
-- Core Temp  
+- Core Temp
+- Microsoft Visual Studio Code
   
 > **Warning**  
-Some software: ***Google Chrome***, ***Zoom***, ***Lightshot***, ***7zip*** require and ***Core Temp*** a privileged right to install. You can run powershell as Administrator or just confirm operation during installation.  
+Some software: ***Google Chrome***, ***Zoom***, ***Lightshot***, ***7zip*** require and ***Core Temp*** a privileged right to install. You can run powershell as Administrator or just confirm operation during installation.
+
+## Screnshot
+![image](https://github.com/lobanov4real/powershell/assets/110660329/e2ece1d2-7f50-4bed-a558-958d0e9fef8d)
+
