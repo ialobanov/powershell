@@ -16,7 +16,7 @@ Set-PSReadlineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSReadLineOption -Colors @{ 
   # "InlinePrediction" = 'Gray'
   # "ListPrediction" = "#b85d2c"
-  "ListPredictionSelected" = "$([char]0x1b)[38;5;100m"
+  "ListPredictionSelected" = "$([char]0x1b)[30;47m"
   # "Selection" = "$([char]0x1b)[38;5;100m"
 }
 
