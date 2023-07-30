@@ -10,7 +10,7 @@ It's my personal powershell setup and some software for deployment on new OS (te
 
 ## Installation
 
-```
+```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm get.scoop.sh | iex
 winget install --accept-package-agreements --accept-source-agreements -h --id Git.Git --Force --source winget  
@@ -19,7 +19,7 @@ winget install --accept-package-agreements --accept-source-agreements -h --id Ja
 
 Reload PowerShell
 
-```
+```powershell
 Add-Content $PROFILE.CurrentUserCurrentHost '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
 cd ~/.config
 git clone https://github.com/lobanov4real/powershell.git
