@@ -76,3 +76,7 @@ After installation reload PowerShell
   
 > **Warning**  
 Some software: ***Google Chrome***, ***Zoom***, ***Lightshot***, ***7zip*** require and ***Core Temp*** a privileged right to install. You can run powershell as Administrator or just confirm operation during installation.
+
+## License
+
+MIT
