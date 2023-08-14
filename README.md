@@ -41,7 +41,7 @@ Install Oh My Posh:
 winget install --accept-package-agreements --accept-source-agreements -h --id JanDeDobbeleer.OhMyPosh --Force --source winget
 ```
 
-`Reload PowerShell`
+Reload PowerShell.
 
 Set path to user profile of PowerShell:
 
@@ -71,9 +71,9 @@ Start installation:
 
 ```powershell
 run-install.ps1
-```  
+```
 
-`After installation reload PowerShell`
+After installation reload PowerShell.
 
 ## List of powershell modules
 
