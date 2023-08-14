@@ -3,7 +3,7 @@
 ## Description
 
 It's my personal powershell setup and some software for deployment on new OS (tested on Windows 11, 10).  
-I use Oh My Posh to change standard look of powershell with own theme ***ivan***, you can choose different themes [here](https://ohmyposh.dev/docs/themes).  
+I use Oh My Posh to change standard look of powershell with own theme **ivan**, you can choose different themes [here](https://ohmyposh.dev/docs/themes).  
 I add some settings for promptline, usefull alias for me and color scheme.  
 Inspired by [@Takuya Matsuyama](https://github.com/craftzdog) from youtube video [How to set up PowerShell prompt with Oh My Posh on Windows 11](https://www.youtube.com/watch?v=5-aK2_WwrmM).  
 
@@ -19,23 +19,62 @@ Inspired by [@Takuya Matsuyama](https://github.com/craftzdog) from youtube video
 
 ## Installation
 
+Install windows package manager Scoop:
+
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+```powershell
 irm get.scoop.sh | iex
-winget install --accept-package-agreements --accept-source-agreements -h --id Git.Git --Force --source winget  
+```
+
+Install Git:
+
+```powershell
+winget install --accept-package-agreements --accept-source-agreements -h --id Git.Git --Force --source winget
+```
+
+Install Oh My Posh:
+
+```powershell
 winget install --accept-package-agreements --accept-source-agreements -h --id JanDeDobbeleer.OhMyPosh --Force --source winget
 ```
 
+> **Warning**  
 Reload PowerShell
+
+Set path to user profile of PowerShell:
 
 ```powershell
 Add-Content $PROFILE.CurrentUserCurrentHost '.$env:USERPROFILE\.config\powershell\user_profile.ps1'
+```
+
+Go to dotenv:
+
+```powershell
 cd ~/.config
+```
+
+Clone GitHub repo:
+
+```powershell
 git clone https://github.com/lobanov4real/powershell.git
+```
+
+Go to PowerShell directory:
+
+```powershell
 cd ./powershell
+```
+
+Start installation:
+
+```powershell
 run-install.ps1
 ```  
 
+> **Warning**  
 After installation reload PowerShell
 
 ## List of powershell modules
