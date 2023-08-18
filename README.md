@@ -112,7 +112,7 @@ After installation reload PowerShell.
 - Core Temp
 - Microsoft Visual Studio Code
   
-> **Warning**  
+> **⚠️ Warning**  
 Some software: ***Google Chrome***, ***Zoom***, ***Lightshot***, ***7zip*** require and ***Core Temp*** a privileged right to install. You can run powershell as Administrator or just confirm operation during installation.
 
 ## License
