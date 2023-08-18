@@ -90,14 +90,12 @@ After installation reload PowerShell.
 - sudo
 - git
 - webtorrent
-- ripgrep  
-- wget  
-- fzf  
-- gcc  
-- lua
-- luarocks
+- ripgrep
+- wget
+- fzf
+- gcc
 - innounp
-- tree-sitter  
+- tree-sitter
 - gzip
 
 ## list of winget software  
