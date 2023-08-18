@@ -1,13 +1,13 @@
-# Setup and customize PowerShell on Windows
+# Setup PowerShell and customize it on Windows
 
 ## Description
 
 It's my personal powershell setup and some software for deployment on new OS (tested on Windows 11, 10).  
 I use Oh My Posh to change standard look of powershell with own theme **ivan**, you can choose different themes [here](https://ohmyposh.dev/docs/themes).  
-I add some settings for promptline, usefull alias for me and color scheme.  
+I add some settings for promptline, useful alias for me and color scheme.  
 Inspired by [@Takuya Matsuyama](https://github.com/craftzdog) from youtube video [How to set up PowerShell prompt with Oh My Posh on Windows 11](https://www.youtube.com/watch?v=5-aK2_WwrmM).  
 
-## Screnshot
+## Screenshot
 
 ![image](https://github.com/lobanov4real/powershell/assets/110660329/e2ece1d2-7f50-4bed-a558-958d0e9fef8d)
 
