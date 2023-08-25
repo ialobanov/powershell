@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "$env:USERPROFILE\.config\powershell\ivan.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:USERPROFILE\.config\powershell\takuya.omp.json" | Invoke-Expression
 
 # Import-Module
 Import-Module -SkipEditionCheck -Force -Name Terminal-Icons
@@ -14,10 +14,10 @@ Set-PSReadLineOption -ShowToolTips:$True
 Set-PSReadLineOption -HistoryNoDuplicates:$True
 Set-PSReadlineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSReadLineOption -Colors @{ 
-  "ListPredictionSelected" = "$([char]0x1b)[40;60m"
+  #"ListPredictionSelected" = "$([char]0x1b)[40;60m"
   # "Selection" = "$([char]0x1b)[38;5;100m"
-  "InlinePrediction"  = '#b85d2c'
-  "ListPrediction"  = 'Black'
+  # "InlinePrediction"  = '#b85d2c'
+  # "ListPrediction"  = 'Black'
 }
 
 # PSFzf options
