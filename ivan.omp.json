@@ -70,7 +70,7 @@
           "type": "git"
         },
         {
-          "foreground": "#01a267",
+          "foreground": "#0ec985",
           "style": "plain",
           "template": "\u276f ",
           "type": "text"
