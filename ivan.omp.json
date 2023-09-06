@@ -31,7 +31,7 @@
         //   "type": "os"
         // },
         {
-          "foreground": "#ff8800",
+          "foreground": "#c062ff",
           "style": "plain",
           "template": "$",
           "type": "text"
@@ -43,7 +43,7 @@
           "type": "session"
         },
         {
-          "foreground": "#0ec985",
+          "foreground": "#27E863",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
@@ -66,11 +66,11 @@
             "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": "<#ff8800>on</> {{.UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "template": "<#c062ff>on</> {{.UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
         },
         {
-          "foreground": "#0ec985",
+          "foreground": "#27E863",
           "style": "plain",
           "template": "\u276f ",
           "type": "text"
