@@ -9,7 +9,8 @@ Inspired by [@Takuya Matsuyama](https://github.com/craftzdog) from youtube video
 
 ## Screenshot
 
-![image](https://github.com/lobanov4real/powershell/assets/110660329/73c18fb0-8863-48ce-8eb3-df0d0df67c45)
+![image](https://github.com/lobanov4real/powershell/assets/110660329/b3993297-a3d5-40b3-ab29-69702401a643)
+
 
 ## Prerequisites
 
