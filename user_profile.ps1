@@ -36,6 +36,7 @@ Function which ($command) {
   }
 Function updateall {winget upgrade --all --include-unknown && scoop update --all}
 Function nvimclean {Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*}
+Function git_push {g add * && g commit -am "refactoring"  && g push}
 
 # Alias
 Set-Alias cle clear
@@ -60,6 +61,7 @@ Set-Alias vag vagrant
 Set-Alias clnvim nvimclean
 Set-Alias clnrb cleanrb
 Set-Alias vbox 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle VM VirtualBox\Oracle VM VirtualBox.lnk'
+Set-Alias gpush git_push
 
 # CommandColor                           : "`e[93m"
 # CommentColor                           : "`e[32m"
