@@ -43,7 +43,7 @@
           "type": "session"
         },
         {
-          "foreground": "#00A85A",
+          "foreground": "#28F043",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
@@ -70,7 +70,7 @@
           "type": "git"
         },
         {
-          "foreground": "#00A85A",
+          "foreground": "#28F043",
           "style": "plain",
           "template": "\u276f ",
           "type": "text"
