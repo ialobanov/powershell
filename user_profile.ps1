@@ -34,7 +34,7 @@ Function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
   Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
   }
-Function updateall {winget upgrade -h --all --include-unknown && scoop update --all}
+Function updateall {winget upgrade --all --include-unknown && scoop update --all}
 Function nvimclean {Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*}
 Function git_push {g add * && g commit -am "refactoring"  && g push && clear}
 
