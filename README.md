@@ -74,7 +74,7 @@ Start installation:
 run-install.ps1
 ```
 
-After installation reload PowerShell.
+> Reload PowerShell
 
 ## List of powershell modules
 
