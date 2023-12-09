@@ -41,6 +41,7 @@ Function git_push {g add * && g commit -am "refactoring"  && g push && clear}
 # Alias
 Set-Alias cle clear
 Set-Alias vim nvim
+Set-Alias vi nvim
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias grep findstr
