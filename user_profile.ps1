@@ -36,7 +36,7 @@ Function which ($command) {
   }
 Function updateall {winget upgrade --all --include-unknown && scoop update --all}
 Function nvimclean {Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*}
-Function git_push {g add * && g commit -am "refactoring"  && g push && clear}
+Function git_push {g add * && g commit -am "."  && g push && clear}
 
 # Alias
 Set-Alias cle clear
