@@ -1,4 +1,4 @@
-# Setup PowerShell and customize it on Windows
+# Setup and customize PowerShell on Windows
 
 ## Description
 
