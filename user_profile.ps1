@@ -7,17 +7,14 @@ Import-Module -SkipEditionCheck -Force -Name PSFzf
 
 # PSReadline options
 Set-PSReadLineOption -EditMode Emacs
-Set-PSReadLineOption -PredictionSource History 
-Set-PSReadLineOption -BellStyle None 
-Set-PSReadLineOption -PredictionViewStyle ListView 
-Set-PSReadLineOption -ShowToolTips:$True 
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -BellStyle None
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -ShowToolTips:$True
 Set-PSReadLineOption -HistoryNoDuplicates:$True
 Set-PSReadlineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
-# Set-PSReadLineOption -Colors @{ 
-#   #"ListPredictionSelected" = "$([char]0x1b)[40;60m"
-#   # "Selection" = "$([char]0x1b)[38;5;100m"
-#   # "InlinePrediction"  = '#b85d2c'
-#   # "ListPrediction"  = 'Black'
+# Set-PSReadLineOption -Colors @{
+#
 # }
 
 # PSFzf options
@@ -61,6 +58,8 @@ Set-Alias vag vagrant
 Set-Alias clnvim nvimclean
 Set-Alias clnrb cleanrb
 Set-Alias gpush git_push
+
+## Change promt colors
 
 # CommandColor                           : "`e[93m"
 # CommentColor                           : "`e[32m"
