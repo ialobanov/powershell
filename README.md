@@ -13,9 +13,9 @@ Inspired by [@Takuya Matsuyama](https://github.com/craftzdog) from youtube video
 
 ## Prerequisites
 
-[Windows Terminal](https://github.com/microsoft/terminal)  
-[PowerShell](https://github.com/PowerShell/PowerShell)  
-[Nerd fonts](https://github.com/ryanoasis/nerd-fonts)  
+- [Windows Terminal](https://github.com/microsoft/terminal)  
+- [PowerShell](https://github.com/PowerShell/PowerShell)  
+- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts)  
 
 ## Installation
 
@@ -41,7 +41,7 @@ Install Oh My Posh:
 winget install --accept-package-agreements --accept-source-agreements -h --id JanDeDobbeleer.OhMyPosh --Force --source winget
 ```
 
-> Reload PowerShell
+> [!ATTANTION] Reload PowerShell
 
 Set path to user profile of PowerShell:
 
@@ -73,7 +73,7 @@ Start installation:
 run-install.ps1
 ```
 
-> Reload PowerShell
+> [!ATTANTION] Reload PowerShell
 
 ## List of powershell modules
 
