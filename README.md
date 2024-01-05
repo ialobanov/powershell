@@ -1,3 +1,4 @@
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit/)
 [![OS](https://img.shields.io/badge/OS-Windows-yellow.svg)](https://www.microsoft.com/en-us/windows?r=1)
 [![Nerd font](https://img.shields.io/badge/Nerd_font-JetBrainsMono-purple.svg)](https://www.jetbrains.com/lp/mono/)
