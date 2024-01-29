@@ -21,19 +21,33 @@ Set-PSReadlineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Functions
-Function CleanTemp {sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue |
-sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction  SilentlyContinue}
-Function cleanrb {Clear-RecycleBin -force}
-Function shutdownoff {shutdown /p}
-Function shutdownreboot {shutdown /r /t 0}
-Function reloadpowershell {Invoke-Command { & "pwsh.exe"       } -NoNewScope}
-Function which ($command) {
-  Get-Command -Name $command -ErrorAction SilentlyContinue |
-  Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
-  }
-Function updateall {winget upgrade --all --include-unknown && scoop update --all}
-Function nvimclean {Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*}
-Function git_push {g add * && g commit -am "."  && g push && clear}
+Function CleanTemp
+{sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue | sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction  SilentlyContinue
+}
+Function cleanrb
+{Clear-RecycleBin -force
+}
+Function shutdownoff
+{shutdown /p
+}
+Function shutdownreboot
+{shutdown /r /t 0
+}
+Function reloadpowershell
+{Invoke-Command { & "pwsh.exe"       } -NoNewScope
+}
+Function which ($command)
+{Get-Command -Name $command -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
+}
+Function updateall
+{winget upgrade --all --include-unknown && scoop update --all
+}
+Function nvimclean
+{Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*
+}
+Function git_push
+{git add * && git commit -am "."  && git push -f && Clear-Host
+}
 
 # Alias
 Set-Alias cle clear
@@ -80,3 +94,6 @@ Set-Alias gpush git_push
 # StringColor                            : "`e[36m"
 # TypeColor                              : "`e[37m"
 # VariableColor                          : "`e[92m"
+
+
+
