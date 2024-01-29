@@ -46,7 +46,7 @@ Function nvimclean
 {Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*
 }
 Function git_push
-{git add * && git commit -am "."  && git push -f && Clear-Host
+{git commit -am "."  && git push -f | Clear-Host
 }
 
 # Alias
@@ -94,6 +94,8 @@ Set-Alias gpush git_push
 # StringColor                            : "`e[36m"
 # TypeColor                              : "`e[37m"
 # VariableColor                          : "`e[92m"
+
+
 
 
 
