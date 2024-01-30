@@ -22,7 +22,7 @@ Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory
 
 # Functions
 Function CleanTemp
-{sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue | sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction  SilentlyContinue
+{sudo Remove-Item -Path $env:TEMP\* -Recurse -Force -ErrorAction SilentlyContinue; sudo Remove-Item -Path C:\Windows\Temp\* -Recurse -Force -ErrorAction  SilentlyContinue
 }
 Function cleanrb
 {Clear-RecycleBin -force
@@ -37,16 +37,16 @@ Function reloadpowershell
 {Invoke-Command { & "pwsh.exe"       } -NoNewScope
 }
 Function which ($command)
-{Get-Command -Name $command -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
+{Get-Command -Name $command -ErrorAction SilentlyContinue; Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
 }
 Function updateall
-{winget upgrade --all --include-unknown && scoop update --all
+{winget upgrade --all --include-unknown; scoop update --all
 }
 Function nvimclean
-{Remove-Item -r ~/AppData/Local/nvim-data/swap/* | Remove-Item -r ~/AppData/Local/nvim-data/shada/*
+{Remove-Item -r ~/AppData/Local/nvim-data/swap/*; Remove-Item -r ~/AppData/Local/nvim-data/shada/*
 }
 Function git_push
-{git add * | git commit -am "." | git push | Clear-Host
+{git add *; git commit -m "ref"; git push
 }
 
 # Alias
@@ -94,6 +94,7 @@ Set-Alias gpush git_push
 # StringColor                            : "`e[36m"
 # TypeColor                              : "`e[37m"
 # VariableColor                          : "`e[92m"
+
 
 
 
