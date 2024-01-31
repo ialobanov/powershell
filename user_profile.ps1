@@ -43,7 +43,7 @@ Function updateall
 {winget upgrade --all --include-unknown; scoop update --all
 }
 Function nvimclean
-{Remove-Item -r ~/AppData/Local/nvim-data/swap/*; Remove-Item -r ~/AppData/Local/nvim-data/shada/*
+{Remove-Item -r $env:LOCALAPPDATA/nvim-data/swap/*; Remove-Item -r $env:LOCALAPPDATA/nvim-data/shada/*
 }
 Function git_push
 {git add *; git commit -m "ref"; git push; Clear-Host;
