@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/easy-term.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/takuya.omp.json" | Invoke-Expression
 
 # Import-Module
 Import-Module -SkipEditionCheck -Force -Name Terminal-Icons
@@ -94,6 +94,10 @@ Set-Alias gpush git_push
 # StringColor                            : "`e[36m"
 # TypeColor                              : "`e[37m"
 # VariableColor                          : "`e[92m"
+
+
+
+
 
 
 
