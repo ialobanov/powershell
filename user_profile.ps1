@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 oh-my-posh init pwsh --config "C:\Users\ivan.lobanov\.config\powershell\ivan.omp.json" | Invoke-Expression
+=======
+oh-my-posh init pwsh --config "C:\Users\Loban\.config\powershell\ivan.omp.json" | Invoke-Expression
+>>>>>>> Stashed changes
 
 # Import-Module
 Import-Module -SkipEditionCheck -Force -Name Terminal-Icons
