@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "$env:USERPROFILE\.config\powershell\ivan.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/negligible.omp.json" | Invoke-Expression
 
 # Import-Module
 Import-Module -SkipEditionCheck -Force -Name Terminal-Icons
@@ -30,9 +30,6 @@ Function cleanrb
 Function shutdownoff
 {shutdown /p
 }
-Function shutdownreboot
-{shutdown /r /t 0
-}
 Function reloadpowershell
 {Invoke-Command { & "pwsh.exe"       } -NoNewScope
 }
@@ -62,8 +59,6 @@ Set-Alias indeed '~\OneDrive\Documents\Default.rdp'
 Set-Alias tlg '~\AppData\Roaming\Telegram Desktop\Telegram.exe'
 Set-Alias chrome 'C:\Program Files\Google\Chrome\Application\chrome.exe /d'
 Set-Alias zoom '~\AppData\Roaming\Zoom\bin\Zoom.exe'
-Set-Alias reboot shutdownreboot
-Set-Alias poweroff shutdownoff
 Set-Alias cln CleanTemp
 Set-Alias touch New-Item
 Set-Alias reload reloadpowershell
