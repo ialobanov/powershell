@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/pure.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/di4am0nd.omp.json" | Invoke-Expression
 
 # Import-Module
 Import-Module -SkipEditionCheck -Force -Name Terminal-Icons
