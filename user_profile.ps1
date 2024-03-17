@@ -1,9 +1,10 @@
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/di4am0nd.omp.json" | Invoke-Expression
+#oh-my-posh init pwsh --config "$env:USERPROFILE/.config/powershell/ivan.omp.json" | Invoke-Expression
 
 # Import-Module
 Import-Module -SkipEditionCheck -Force -Name Terminal-Icons
 Import-Module -SkipEditionCheck -Force -Name PSReadLine
 Import-Module -SkipEditionCheck -Force -Name PSFzf
+Import-Module -SkipEditionCheck -Force -Name posh-git
 
 # PSReadline options
 Set-PSReadLineOption -EditMode Emacs
